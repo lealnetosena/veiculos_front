@@ -18,6 +18,8 @@ function getAllCarros() {
                     <td>${carros.Nome}</td>
                     <td>${carros.Fabricante}</td>
                     <td>${carros.Placa}</td>
+                    <td><a href="/editar/${carros.id}"><i class="bi bi-pencil-square"></i></a> </td>
+                    <td><a href="#" onclick="if(confirm('Tem certeza que deseja apagar o registro?')){window.location.href='/apagar/${carros.id}';}"><i class="bi bi bi-trash"></i></a> </td>
                 </tr>`
         
             }).join("")
